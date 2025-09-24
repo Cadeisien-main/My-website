@@ -16,7 +16,7 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  filter: blur(0);
+  filter: blur(2px);
   z-index: -2;
 }
 
@@ -30,7 +30,7 @@
   height: 100%;
   z-index: -1;
   pointer-events: none;
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 /* CONTENT */
@@ -79,7 +79,7 @@
 }
 
 .nav-links a.active {
-  background-color: rgba(255,255,255,0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   font-weight: bold;
 }
 
@@ -123,13 +123,17 @@
     flex-direction: column;
     padding: 10px;
     border-radius: 12px;
-    background-color: rgba(255,255,255,0.15);
+    background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(8px);
   }
 
-  .nav-links.active { display: flex; }
+  .nav-links.active {
+    display: flex;
+  }
 
-  .nav-links li { margin: 10px 0; }
+  .nav-links li {
+    margin: 10px 0;
+  }
 }
 
 /* HEADER */
@@ -144,7 +148,7 @@
 
 /* TEXT SECTIONS */
 .page-text {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(6px);
   padding: 15px;
   margin: 20px auto;
@@ -155,24 +159,29 @@
   line-height: 1.6;
   color: #fff;
   border-radius: 12px;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
-.homepage-text{
-  background: rgba(255,255,255,1);
-  backdrop-filter: blur(6px);
+
+.homepage-text {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
   padding: 15px;
-  position: absolute;
-  display:flex;
-  justify-content:center;
-  top: 500px; /* Positions the text 50 pixels from the top of the container */
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   max-width: 900px;
   text-align: center;
   font-weight: 600;
   font-size: clamp(0.9rem, 2vw, 1.2rem);
   line-height: 1.6;
-  color: #fff;
+  color: #222;
   border-radius: 12px;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* ABOUT ME */
@@ -213,6 +222,7 @@
   display: block;
   margin: 0 auto;
   width: 50%;
+}
 
 /* GENERAL SPOTIFY BUTTONS (like "Visit my Spotify Profile") */
 .spotify-button {
@@ -241,7 +251,7 @@
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(6px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .spotify-playlist iframe {
@@ -283,13 +293,29 @@
 }
 
 /* Individual Social Platforms */
-.social-button.github { background-color: #24292e; }
-.social-button.twitch { background-color: #8956FB; }
-.social-button.youtube { background-color: #FF0000; }
+.social-button.github {
+  background-color: #24292e;
+}
 
-.social-button.github:hover { background-color: #1d2125; }
-.social-button.twitch:hover { background-color: #6e45c9; }
-.social-button.youtube:hover { background-color: #cc0000; }
+.social-button.twitch {
+  background-color: #8956FB;
+}
+
+.social-button.youtube {
+  background-color: #FF0000;
+}
+
+.social-button.github:hover {
+  background-color: #1d2125;
+}
+
+.social-button.twitch:hover {
+  background-color: #6e45c9;
+}
+
+.social-button.youtube:hover {
+  background-color: #cc0000;
+}
 
 /* Ensure social buttons stack nicely and don't overlap text */
 .page-text .social-button {
