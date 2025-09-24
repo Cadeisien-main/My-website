@@ -45,6 +45,7 @@
 
 /* NAVBAR */
 .navbar {
+  background-color: rgba(255, 255, 255, 0.15);
   position: fixed;
   top: 15px;
   left: 50%;
@@ -52,7 +53,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 30%;
   max-width: 1100px;
   padding: 0 20px;
   z-index: 1001;
@@ -149,7 +150,7 @@
 
 /* TEXT SECTIONS */
 .page-text {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(6px);
   padding: 15px;
   margin: 20px auto;
@@ -158,14 +159,14 @@
   font-weight: 600;
   font-size: clamp(0.9rem, 2vw, 1.2rem);
   line-height: 1.6;
-  color: #fff;
+  color: #000000;
   border-radius: 12px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 2px 4px rgba(117, 109, 109, 0.6);
 }
 
 .homepage-text {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(16px);
   padding: 15px;
   position: fixed;
   display: flex;
@@ -179,9 +180,9 @@
   font-weight: 600;
   font-size: clamp(0.9rem, 2vw, 1.2rem);
   line-height: 1.6;
-  color: #222;
+  color: #000000;
   border-radius: 12px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 2px 4px rgba(117, 109, 109, 0.6);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -192,20 +193,36 @@
   justify-content: center;
   align-items: center;
   margin: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(16px);
+  padding: 15px;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 900px;
+  text-align: center;
+  font-weight: 600;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  line-height: 1.6;
+  color: #000000;
+  border-radius: 12px;
+  text-shadow: 0 2px 4px rgba(117, 109, 109, 0.6);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .aboutme-text {
-  max-width: 400px;
+  max-width: 500px;
   margin: 10px;
   text-align: center;
-  color: #fff;
+  color: #000000;
 }
 
 .aboutme-button {
   display: inline-block;
   margin-top: 10px;
   padding: 10px 20px;
-  background-color: #1db954;
+  background-color: #471061;
   color: #fff;
   text-decoration: none;
   font-weight: bold;
@@ -213,7 +230,7 @@
 }
 
 .aboutme-button:hover {
-  background-color: #1ed760;
+  background-color: #601781;
 }
 
 .aboutme-image img {
@@ -225,7 +242,7 @@
   width: 50%;
 }
 
-/* GENERAL SPOTIFY BUTTONS (like "Visit my Spotify Profile") */
+/* Spotify Profile Button */
 .spotify-button {
   display: inline-block;
   margin: 10px auto;
@@ -240,7 +257,7 @@
 
 /* Hover effect for general Spotify buttons */
 .spotify-button:hover {
-  background-color: #1ed760;
+  background-color: #10692f;
 }
 
 /* SPOTIFY PLAYLISTS */
@@ -278,7 +295,7 @@
 
 /* Hover effect for playlist buttons */
 .spotify-playlist .spotify-button:hover {
-  background-color: #1ed760;
+  background-color: #10692f;
 }
 
 /* SOCIAL BUTTONS */
@@ -315,10 +332,10 @@
 }
 
 .social-button.youtube:hover {
-  background-color: #cc0000;
+  background-color: #9c0202;
 }
 
-/* Ensure social buttons stack nicely and don't overlap text */
+/* Ensure social buttons stack */
 .page-text .social-button {
   display: block;
   width: 250px;
@@ -338,6 +355,7 @@
 }
 
 /* Hamburger Animation */
+/*only kinda works*/
 .menu-toggle.open span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
@@ -350,7 +368,7 @@
   transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* Inline link color */
+/* hypertext link color */
 .inline-link {
   color: dodgerblue;
   text-decoration: underline;
