@@ -157,13 +157,14 @@
   border-radius: 12px;
   text-shadow: 0 2px 4px rgba(0,0,0,0.6);
 }
-.homepage-text {
-  background: rgba(255,255,255,0.1);
+.homepage-text{
+  background: rgba(255,255,255,1);
   backdrop-filter: blur(6px);
   padding: 15px;
-  margin: 20px auto;
-  position: relative;
-  top: 30px;
+  position: absolute;
+  display:flex;
+  justify-content:center;
+  top: 500px; /* Positions the text 50 pixels from the top of the container */
   max-width: 900px;
   text-align: center;
   font-weight: 600;
@@ -209,7 +210,9 @@
   max-width: 150px;
   border-radius: 50%;
   margin: 10px;
-}
+  display: block;
+  margin: 0 auto;
+  width: 50%;
 
 /* GENERAL SPOTIFY BUTTONS (like "Visit my Spotify Profile") */
 .spotify-button {
