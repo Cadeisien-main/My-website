@@ -69,6 +69,7 @@
   justify-content: center;
   gap: 20px;
   padding: 10px 25px;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
 }
 
 .nav-links a {
