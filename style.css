@@ -244,6 +244,7 @@
 .aboutme-image img {
   max-width: 250px;
   width: 100%;
+  max-height: 250px;
   border-radius: 15px;
   margin: 10px auto;
   display: block;
